@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                  git branch: 'main', url: 'https://github.com/sadasrkgithub18/courses_web_app.git'
+                  git branch: 'main',  credentialsId: '50137803-2c55-4259-9634-6054953641c2', url: 'https://github.com/sadasrkgithub18/courses_web_app.git'
             }
         }
         stage('Maven Build'){
