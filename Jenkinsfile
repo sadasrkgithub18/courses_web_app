@@ -1,4 +1,4 @@
-@Library('ashokit_shared_lib') _
+@Library('SRKIT-Lib') _
 
 pipeline {
     agent any    
@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-             git branch: 'main', credentialsId: 'GIT-CREDENTIALS', url: 'https://github.com/ashokitschool/courses_web_app.git'
+                  git branch: 'main', url: 'https://github.com/sadasrkgithub18/courses_web_app.git'
             }
         }
         stage('Maven Build'){
